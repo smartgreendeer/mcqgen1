@@ -19,15 +19,15 @@ st.title("John MCQs Creator Application with LangChain 🦜📚")
 
 
 with st.form("user input"):
-    uploaded_file=st.file_uploader("upload pdf or text")
+    uploaded_file=st.file_uploader("upload pdf or txt files")
 
-    mcq_count=st.number_input("no of mcq's", min_value=3, max_value=50)
+    mcq_count=st.number_input("No of MCQs", min_value=3, max_value=50)
 
     subject=st.text_input("Insert Subject",max_chars=20)
 
-    tone=st.text_input("Complexity Level Of Questions", max_chars=20, placeholder="Simple")
+    tone=st.text_input("Complexity of Level Of Questions", max_chars=20, placeholder="Simple")
 
-    button=st.form_submit_button("Create MCQs")
+    button=st.form_submit_button("Generate MCQs")
 
     if button and uploaded_file is not None and mcq_count and subject and tone:
         with st.spinner("loading..."):
