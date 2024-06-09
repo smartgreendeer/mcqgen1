@@ -21,9 +21,16 @@ st.title("John MCQs Creator Application  🦜📚")
 with st.sidebar:
     st.title("MCQs GENERATOR")
     st.write("Your to go to helper to help you study for an exam")
-    st.write("Just upload your subject doc and it will generate a test for you with the correct answers based on the subject you selected be sure to input the correct file 'It only words with pdf and txt files'")
+    st.write("Just upload your subject doc and it will generate a test for you with the correct answers based on the file you uploaded be sure to upload the correct file 'It only works with pdf and txt files'")
+    name=st.text_input("Your name", max_chars=40, placeholder="Shanko")
     
-    #st.slider(min_value=0, max_value=10, step=1)
+    
+    st.write("Hey", name, "kindly rate us...unless you want your bot not to work 'kidding still gonna work' ")
+    rate_value=st.slider('Ratings⭐⭐⭐⭐', 0, 10, 0)
+    
+    st.write('You gave us a rating of', rate_value, 'thank you kind human being🧑🏾‍🤝‍🧑🏿🤗 ')
+    
+    st.write("Serviced by John's AI")
    
 
 
