@@ -15,7 +15,16 @@ with open('Response.json', 'r') as file:
 
 
 #creating a title for the app
-st.title("John MCQs Creator Application with LangChain 🦜📚")
+st.title("John MCQs Creator Application  🦜📚")
+
+
+with st.sidebar:
+    st.title("MCQs GENERATOR")
+    st.write("Your to go to helper to help you study for an exam")
+    st.write("Just upload your subject doc and it will generate a test for you with the correct answers based on the subject you selected be sure to input the correct file 'It only words with pdf and txt files'")
+    
+    #st.slider(min_value=0, max_value=10, step=1)
+   
 
 
 with st.form("user input"):
